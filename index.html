@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="animate.css">
+	 <script src="wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>지니</title>
+	<!-- minsans 웹폰트 넣기 -->
+	<style type="text/css">
+		@font-face {
+    	font-family: 'YdestreetL';
+    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/YdestreetL.woff2') format('woff2');
+    	font-weight: normal;
+    	font-style: normal;
+		}
+		@font-face {
+    	font-family: 'YdestreetB';
+    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/YdestreetB.woff2') format('woff2');
+    	font-weight: normal;
+    	font-style: normal;
+		}
+		html{font-family: 'Spoqa Han Sans Neo', 'sans-serif';}
+		*{box-sizing:  border-box;}
+		body,h1,h2,p{margin: 0; padding: 0;}
+		.header,.footer{ background-image: url(back2.png);background-size: cover; background-attachment: fixed; }
+		.row{width: 1200px; margin: auto;}
+
+		.header_image{width: 1200px; padding-top: 80px; display: block; margin: 0px auto;}
+		.header2_image{width: 1200px; padding-top: 270px; display: block; margin: 0px auto;}
+		
+		.subheader{margin: auto; height: 190px; background: rgb(0, 70, 254); margin-top: ;}
+		.row .subheader_text{text-align: center; padding: 120px 20px;
+					font-size: 20pt; font-weight: 400; color: white;
+					letter-spacing: -0.02em;}
+		.row .subheader_text2{text-align: center; padding: 5px 20px;
+					font-size: 30pt; font-weight: 400; color: white; display: block; letter-spacing: -0.04em;}
+		.jn1{text-align: center; padding-top: 53px; display: block; margin: 0px auto;}
+		.jn1{animation: float 3s ease-in-out infinite;}
+	
+		.content1{background: white; position: relative;}
+		.content1text, .content1image{display: block; position: absolute;}
+		.content1text{top: 95px; color: rgb(0, 70, 254);}
+		.content1text h1{font-size: 130pt; font-weight: 400; letter-spacing: -0.02em; font-family: 'YdestreetL';}
+		.content1text h2{font-size: 32pt; font-weight: 600; letter-spacing: -0.02em; padding-top: 24px;}
+		.content1text p{font-size: 18pt; font-weight: 400; letter-spacing: -0.02em; line-height: 150%; padding-top: 12px; color: #4f4f4f;}
+		.content1image{right: 0px; top: 274px;}
+
+		.Genie-T{ display: flex; gap: 45px;
+				width: 490px; top: 102px; position: absolute;}
+		.genietext{background: white; color: rgb(0, 70, 254);
+				box-sizing: border-box; border-radius: 0px 31px 31px 31px;
+				 padding: 10px; }
+		.Genie-T h1{letter-spacing: -0.02em; margin: 20px;}
+		.Genie-T p{margin: 20px; font-size: 14pt; font-weight: 400;letter-spacing: -0.04em; line-height: 150%;}
+
+		.footer{height: 1080px; position: relative;}
+		.footer_image{display: block; margin: 0px auto; padding-top: 400px;
+		}
+		.footer_image{animation: float 3s ease-in-out infinite;}
+
+		.footer_text{text-align: center; color: white; font-size: 36pt; letter-spacing: -0.02em; font-weight: 700;
+			text-shadow: 0px 4px 48px rgba(0, 0, 0, 0.5);}
+		.footer_text_total{width: 800px; margin: auto; top: 560px;}
+		
+		.bt_container{
+			padding-top: 107px; display: flex; gap: 80px; 
+			justify-content: center;
+		}
+		.bt_yes, .bt_no{width: 268px; text-align: center; 
+				margin: 10px,40px; border: 1px solid #FFFFFF;
+				box-sizing: border-box; 				
+				box-shadow: 0px 0px 36px rgba(255, 255, 255, 0.19);
+				border-radius: 100px;}
+		a{ display: block;
+				line-height: 80px; 
+				text-decoration: none;
+				box-shadow: 0px 0px 36px rgba(255, 255, 255, 0.19);
+				border-radius: 100px;
+				font-size: 24pt; font-weight: 600; color: white;}
+		li{list-style-type: none;}
+		.bt_yes a:hover{transition: all 0.5s; background-color: white; color:
+					 box-shadow: 0px 0px 16px white;
+					 color: blue;  text-decoration: none; }
+		.bt_no a:hover{transition: all 0.5s; background-color: white; color:
+					 box-shadow: 0px 0px 16px white;
+					 color: blue;  text-decoration: none; }
+/*본문 section 공통 컴포넌트*/
+	.name span{font-size: 30pt;}
+	.name h2{font-size: 58pt; font-weight: 700; letter-spacing: -0.02em; line-height: 72px;}
+	.name p{font-family: 'Spoqa Han Sans Neo'; font-size: 16pt; font-weight: 400; color: #000000;
+				letter-spacing: -0.04em; padding-top: 20px; line-height: 140%;}
+	.story p{font-size: 16pt; font-weight: 400; color: rgba(3, 9, 37, 1); line-height: 150%; letter-spacing: -0.05em; padding: 8px 0px;}
+	.story h2{font-size: 45pt; font-weight: 700;letter-spacing: -0.02em; color: rgb(0, 70, 254);}
+	.box{width: 408px; height: 42px; border: solid 1px blue;}
+/*이미지좌측section*/
+		.sectionleft{height: 1288px; position: relative; background: white;}
+		.sectionleft .name{color: rgb(0, 70, 254); font-family: 'YdestreetB'; text-align: right;
+			  position: absolute; top: 106px; right: 0px;}
+		.sectionleft .name .inline{padding-right: 66px;}
+		.sectionleft .story{position: absolute; right: 153px; top: 582px;}
+		.sectionleft .section1img{position: absolute; top: 78px; float: left;}
+		.sectionleft .em{position: absolute; left: 185px; bottom: 181px;}
+		.sectionleft .box{position: absolute; bottom: 84px; left: 269px;}
+/*이미지우측section*/
+		.sectionright{height: 1288px; position: relative; background: white;}
+		.sectionright .name{color: rgb(0, 70, 254); font-family: 'YdestreetB';
+			  			position: absolute; top: 106px; left: 0px;}
+		.sectionright .name .inline{padding-left: 66px;}
+		.sectionright .story{position: absolute; left: 150px; bottom: 374px;}
+		.sectionright .section2img{position: absolute; top: 141px; right: 0;}
+		.sectionright .em2{position: absolute; right: 185px; bottom: 181px;}
+		.sectionright .box{position: absolute; bottom: 84px; right: 269px;}
+
+		@keyframes float {
+		0% {transform: translatey(0px);}
+		50% {transform: translatey(-20px);}
+		100% {transform: translatey(0px);}
+		}
+	</style>
+</head>
+<body>
+	<section class="header" style="height: 680px;">
+	<!-- 섹션을 헤더로 바꾸기
+		 앱솔루트 넣는 경우 아니면 height 지정하지 말고 margin으로 주기  -->
+		<div class="row">
+		<img src="header.svg" class="header_image">	
+		<img src="jn1.svg" class="jn1">
+		</div>
+	</section>
+	<section class="subheader">
+	<div class="row">
+	<!--div row 적용하고, 예외사항은 row .어쩌구 형태로 스타일 다시 적용하기-->
+		<div class="subheader_text">
+		제 램프를 주워주신 당신, 지니가  성심성의껏 모시겠습니다. 어떤 소원이든 멋지게 이뤄드릴게요  \ ^ 3 ^ /
+		</div>
+	</div>
+	</section>
+	<section class="sectionwhite" style=" background: white; height: 750px;">
+		<div class="row content1">
+		<div class="content1text">
+			<h1>소원*</h1>
+			<h2>소원을 비는 법은 간단해요.</h2>
+			<p>램프를 문지르고, 지니를 부르고, 말하기만 하면 되죠.<br>어떤 소원이든, 3번의 기회가 있죠.</p>
+		</div>
+		<div class="content1image"><img src="marble.svg"></div>	
+		</div>
+	</section>
+		<section class="subheader">
+		<div class="row">
+		<!--div row 적용하고, 예외사항은 row .어쩌구 형태로 스타일 다시 적용하기-->
+		<div class="subheader_text2">
+		꒰⍢꒱<br><br></b>3번, 당신이 <b>원하는 모든 것</b>을 이룰 수 있다구요!
+		</div>
+		</div>
+	</section>
+	<section class="header" style="height: 1130px">
+	<div class="row" style="position: relative;">
+			
+			<div class="Genie-T">
+			<img src="gnT.svg">
+			<div class="genietext">
+			<h1>계약서 도장 찍을 준비 됐나요?</h1>
+			<p>아, 하나 더 말해줄 게 있어요. 소원에는 아주 약간의 문제가 있을 수 있죠. 주의깊게 읽어봐요.</p>
+			</div>
+			</div>	
+		</div>
+		<img src="header2.svg" class="header2_image">	
+		</div>
+	</section>
+<!-- 콘텐츠 섹션에 뭔가 애니메이션 요소 적용해보기 -->
+<!-- 1section start -->
+	<section class="sectionwhite">
+		<div class="row">
+			<section class="sectionleft">
+				<div class="name">
+					<span>1</span>
+					<div class="inline">
+					<h2>욕망의 항아리 소원</h2>
+					<p>욕망으로만 가득해서 충동적으로 외치는 소원은<br>어떤 결과를 불러올지 모릅니다.</p>
+					</div>
+				</div>
+				<div class="story">
+					<p>49321번째 주인은<br><b style="color: rgb(0, 70, 254);">돈이 많은 억만장자가 되고 싶다는 소원</b>을 빌었답니다.<br>그래서 지니는</p>
+					<h2>억만장자의 마약왕</h2>
+					<p>으로 만들어드렸어요!<br>다음 소원을 이루기도 전에 감옥에 갔지만요.<br>어쨌든, 지니는 소원을 들어줬답니다. </p>
+				</div>
+				<img class="section1img wow fadeInLeft" src="section1image.svg" style="top">
+				<img class="em" src="em.svg">
+				<div class="box"></div>
+				</section>
+			</div>
+	</section>
+<!-- 1section end -->
+<!-- 2section start -->
+	<section class="sectionwhite">
+		<div class="row">
+			<section class="sectionright">
+				<div class="name">
+					<span>2</span>
+					<div class="inline">
+					<h2>태생적인 것을<br>바꾸는 소원</h2>
+					<p>당신의 태생적인 것을 바꾸게 되는 소원은<br>그 순간만 좋을 수 있어요.</p>
+					</div>
+				</div>
+				<div class="story">
+					<p>29513번째 주인은<br><b style="color: rgb(0, 70, 254);">키가 커지고 싶다는 소원</b>을 빌었고<br>그래서 지니는 키가 무진장 커지게 만들어 드렸죠.</p>
+					<h2>얼마 안가 뼈가<br>녹아내리더군요.</h2>
+					<p>좋은 주인이었는데.. 어쩔 수 없는 결과였어요.<br>스프링마냥 쭈욱 늘린거니까요.</p>
+				</div>
+				<img class="section2img wow fadeInRight" src="section2image.svg">
+				<img class="em2" src="em2.svg">
+				<div class="box"></div>
+				</section>
+			</div>
+	</section>
+<!-- 2section end -->
+<!-- 3section start -->
+	<section class="sectionwhite">
+		<div class="row">
+			<section class="sectionleft">
+				<div class="name">
+					<span>3</span>
+					<div class="inline">
+					<h2>누군가의 것을<br>빼앗는 소원</h2>
+					<p>누군가의 것을 빼앗고 싶나요?<br>이런 소원을 빌면 당신에게 그대로 돌아올거예요.</p>
+					</div>
+				</div>
+				<div class="story" style="right: 110px;">
+					<p>26214번째 주인은<br><b style="color: rgb(0, 70, 254);">친구의 애인을 빼앗고 싶다는 소원</b>을 빌었어요.<br>
+					그래서 지니가 분부대로 주인 곁에 있게 해드렸죠.
+					<br>하지만 한 가지 사실은 몰랐어요.</p>
+					<h2>아뿔싸, 주인의<br>팔촌일 줄이야.
+					</h2>
+				</div>
+				<img class="section1img wow fadeInLeft" style="top: 155px;" src="section3image.svg">
+				<img class="em" src="em3.svg">
+				<div class="box"></div>
+				</section>
+			</div>
+	</section>
+<!-- 3section end -->
+<!-- 4section start -->
+	<section class="sectionwhite">
+		<div class="row">
+			<section class="sectionright">
+				<div class="name">
+					<span>4</span>
+					<div class="inline">
+					<h2>큰 영향을<br>주는 소원</h2>
+					<p style="padding-left: 5px;">나비의 날갯짓이 반대편에는<br>토네이도를 일으키듯,<br>당신이 비는 소원이 어딘가에<br>큰 영향을 줄 수 있어요.좋든, 나쁘든.</p>
+					</div>
+				</div>
+				<div class="story" style="left: 110px">
+					<p>38295번째 주인은<br><b style="color: rgb(0, 70, 254);">하늘을 날고 싶다는 소원</b>을 빌었어요!<br>그래서 지니가 마음껏 하늘을 날아다닐 수 있게 만들었는데,</p>
+					<!-- h2 행간 1.2로 조정 -->
+					<h2 style="line-height: 1.2;">주인이 일으킨<br>바람이 비행기 사고를</h2>
+					<p>일으켰어요. 소원은 제대로 들어줬지만..</p>
+				</div>
+				<img class="section2img wow fadeInRight" style="top: 255px;" src="section4image.svg">
+				<img class="em2" src="em4.svg">
+				<div class="box"></div>
+				</section>
+			</div>
+	</section>
+<!-- 4section end -->
+<!-- 5section start -->
+	<section class="sectionwhite">
+		<div class="row">
+			<section class="sectionleft">
+				<div class="name">
+					<span>5</span>
+					<div class="inline">
+					<h2>비현실적인 것을<br>만들어내는 소원</h2>
+					<p style="padding-right: 5px;">현실세계에 없는 것을 만들어내는 비현실적인 소원은<br>예상치 못한 결과를 불러올 수 있습니다.</p>
+					</div>
+				</div>
+				<div class="story" style="top:645px;">
+					<p>14672번째 주인은<br><b style="color: rgb(0, 70, 254);">해리포터가 되고 싶다는 소원</b>을 빌었어요.<br>마법 쓰는 소년이요. 그래서 해리포터로 만들어드렸죠. </p>
+					<h2>비록 몸 속에 갇혀</h2>
+					<p>책이 펼쳐질 때마다 수억만번 같은 일을 겪어야 했지만요.</p>
+				</div>
+				<img class="section1img wow fadeInLeft" data-wow-iteration=2 style="top: 268px" src="section5image.svg">
+				<img class="em" src="em5.svg">
+				<div class="box"></div>
+				</section>
+			</div>
+	</section>
+<!-- 5section end -->
+	<section class="footer">
+		<div class="row">
+			<div class="Genie-T">
+			<img src="gnT.svg">
+			<div class="genietext">
+			<h1>좀 많죠?<br>소원이 그만큼 까다롭긴 해요.</h1>
+			<p>하지만 잘 빌면 문제없을거예요. 걱정하지말고.<br>도장은 가져왔죠?</p>
+			</div>
+			</div>	
+		<img src="footer_image.svg" class="footer_image">
+		<div class="footer_text_total">
+		<div class="footer_text">자, 무엇이든 이뤄주는 램프의 요정 지니의</div>
+		<div class="footer_text">55555번째 주인이 되어주실래요?</div>
+		</div>
+		<div class="bt_container">
+		<li class="bt_yes">
+			<a href="https://chaeyeon27.github.io/md-1-1/" target="0">계약하기</a>
+		</li>
+		<li class="bt_no">
+			<a href="https://chaeyeon27.github.io/md-1-2/" target="0">포기하기</a>
+		</li>
+		</div>
+		<div class="footer_name" style="padding-top: 60px;">
+			<span style="display: block; margin: 0 auto; text-align:center; color: white; opacity: 0.5">2022&copy;이채연</span>
+		</div>
+		</div>
+	</section>
+</body>
+</html>
